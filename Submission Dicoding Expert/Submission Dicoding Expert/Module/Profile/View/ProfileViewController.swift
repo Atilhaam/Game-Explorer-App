@@ -71,7 +71,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         }
         if indexPath.row == 0 {
             cell.selectionStyle = .none
-            cell.imagePoster.sd_setImage(with: URL(string: "https://firebasestorage.googleapis.com:443/v0/b/arpegio-6f77e.appspot.com/o/productImages%2F13E1B6FB-75DA-4245-9E5D-032CEF5A3619_product_picture.png?alt=media&token=89798c91-9476-437b-8b2d-e9ad8cc4346f"))
+            cell.imagePoster.image = UIImage(named: "profileImage")
             cell.creatorLabel.text = profile.name
             cell.aboutContent.text = profile.about
             cell.emailContent.text = profile.email

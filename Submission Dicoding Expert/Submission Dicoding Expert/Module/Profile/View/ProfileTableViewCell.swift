@@ -14,6 +14,7 @@ class ProfileTableViewCell: UITableViewCell {
     
     let imagePoster: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
         return image
     }()
     
